@@ -8,20 +8,19 @@ The project uses maven as a build tool and also sample script to run on applicat
 
  1. Spring Boot (2.1.7.RELEASE)
  2. JWT (0.9.1)
- 3. H2 Database (default) [MySql – Production]
+ 3. H2 Database (default dev profile) [MySql – Production profile]
  4. Java 1.8
 
 
 ## API Details
-API Name  - Token Generation
+API Name  - ** Token Generation **
 
-URL - localhost:8080/token/generate-token
+URL - `` localhost:8080/token/generate-token ``
 
-Method - POST
+Method - ** POST **
 
-Header - 
-	
-		Content-Type: application/json
+Header - ```Content-Type: application/json```
+
 Body -
 
 	{
@@ -40,15 +39,19 @@ Response :
 	    }
 	}
 	
-API Name  - List User
-URL - http://localhost:8080/users
-Method - Get
-Header - Content-Type: application/json
+API Name  - ** List User **
 
-    Authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE
+URL - `` http://localhost:8080/users ``
+
+Method - ** Get **
+
+Header - ```Content-Type: application/json```
+
+Authorization : ``` Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE```
     
-	Response -
-	{
+Response -
+
+	 {
 	    "status": 200,
 	    "message": "User list fetched successfully.",
 	    "result": [
@@ -79,17 +82,16 @@ Header - Content-Type: application/json
 	    ]
 	}
 
-API Name  - Create User
+API Name  - ** Create User **
 
-URL - http://localhost:8080/users
+URL - `` http://localhost:8080/users ``
 
-Method - POST
+Method - ** POST **
 
-Header - 
-	
-	Content-Type: application/json
+Header - ```Content-Type: application/json```
 
-    Authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE
+Authorization : ``` Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE ```
+
 Body -
 
 	{
@@ -117,17 +119,16 @@ Response -
 	}
 
 
-API Name  - Update User
+API Name  - ** Update User **
 
-URL - http://localhost:8080/users/4
+URL - `` http://localhost:8080/users/4 ``
 
-Method - PUT
+Method - ** PUT **
 
-Header - 
+Header - ```Content-Type: application/json```
 
-	Content-Type: application/json
+Authorization : ``` Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE ```
 
-    Authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE
 Body -
 
 	{
@@ -154,18 +155,17 @@ Response -
 	        "salary": 12345
 	    }
 	}
+	
 
-API Name  - Delete User
+API Name  - ** Delete User **
 
-URL - http://localhost:8080/users/4
+URL - `` http://localhost:8080/users/4 ``
 
-Method - DELETE
+Method - ** DELETE **
 
-Header - 
+Header - ```Content-Type: application/json```
 
-	 Content-Type: application/json
-
-    Authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE
+Authorization : ``` Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE ```
 
 Response -
 
