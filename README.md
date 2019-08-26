@@ -41,9 +41,14 @@ Response :
 	}
 	
 API Name  - List User
+
 URL - http://localhost:8080/users
+
 Method - Get
-Header - Content-Type: application/json
+
+Header - 
+
+	Content-Type: application/json
 
     Authorization : Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4MTIzIiwic2NvcGVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn1dLCJpc3MiOiJodHRwOi8vZGV2Z2xhbi5jb20iLCJpYXQiOjE1NDEwNjIzOTMsImV4cCI6MTU0MTA4MDM5M30.DMoB5kv72X7Jf-U5APdjK3UUcGomA9NuJj6XGxmLyqE
     
